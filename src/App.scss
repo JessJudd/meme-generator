@@ -1,0 +1,79 @@
+// #root {
+//   max-width: 1280px;
+//   margin: 0 auto;
+//   padding: 2rem;
+//   text-align: center;
+// }
+
+:root {
+  --gem5:#165a4c;
+  --gem4:#239063;
+  --gem3:#1ebc73;
+  --gem2:#91db69;
+  --gem1:#cddf6c;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#165a4c+0,1ebc73+100 */
+  --gradient: linear-gradient(45deg,  
+  var(--gem5) 0%, 
+  var(--gem4) 25%, 
+  var(--gem3) 50%, 
+  var(--gem2) 75%, 
+  var(--gem1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */;
+}
+
+#root {
+  font-family: 'Ubuntu', sans-serif;
+  width:100%;
+}
+
+.header {
+  background: var(--gradient);
+  
+  align-items:center;
+  background-color:var(--gem5);
+  color:#fff;
+  display:flex;
+  padding:20px;
+  width:100%;
+  max-width:100%;
+  .course-name {
+    color:#000;
+    margin-left:auto;
+  }
+}
+
+.meme-container {
+  margin:0 auto;
+  max-width:550px;
+  width:100%;
+}
+
+.meme-form {
+  // display:flex;
+  // flex-wrap:wrap;
+  // flex: 0 0 1;
+  // gap:16px;
+  
+  display:grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap:16px;
+
+  padding: 40px 0;
+  * {
+    font-family: 'Ubuntu', sans-serif;
+  }
+  &-input {
+    border: thin solid var(--gem5);
+    // flex-grow: 2;
+  }
+  button {
+    background:var(--gradient);
+    border:none;
+    border-radius:5px;
+    color:#fff;
+    cursor:pointer;
+    // flex-basis:100%;
+    grid-column: 1 / -1;
+    padding:10px 0;
+    text-align:center;
+  }
+}
